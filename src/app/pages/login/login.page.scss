@@ -1,0 +1,48 @@
+ion-content{
+   & > div{
+    background: url(../../../assets/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: Quicksand;
+    padding: 24px;
+}
+}
+
+
+.container-info{
+    margin-top: 91px;
+    .container-info__img{
+        margin: auto;
+        width: 180px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .container-info__text{
+        text-align: center;
+    }
+
+
+    .container-info__text .welcome{
+        font-style: italic;
+    }
+    .container-info__text .light-text{
+        color: #96B1E0;
+    }
+}
+
+
+.container-form{
+    background-color: #0F192E;
+}
+
+.transparent {
+    --background: #0F192E;
+  background-color: #0F192E !important;
+}
+
+.label-text{
+    font-size: 22px !important;
+}
