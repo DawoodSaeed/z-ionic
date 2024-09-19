@@ -83,11 +83,27 @@ ion-content {
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(18.899999618530273px);
   padding: 10px 10px;
+  transition: all 0.2s ease-in;
+
+  &.active {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(18.899999618530273px);
+  }
 }
 .form-control {
   background-color: transparent;
+
+  &:focus {
+    outline: none;
+    border: 0px;
+  }
+}
+
+input[type="checkbox"] {
+  padding: 20px;
 }
 
 .btn-form {
@@ -100,6 +116,7 @@ ion-content {
   margin-top: 16px;
 }
 
+// For the svg part.....
 svg {
   width: 80vw;
   height: auto;

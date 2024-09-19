@@ -103,7 +103,7 @@
     <div class="container-form">
       <div class="form-group">
         <label for="username">Username</label>
-        <div class="input-group flex gap-3 item-center mt-2">
+        <div class="input-group flex gap-3 item-center mt-2" #username>
           <div>
             <img src="../../../assets/images/Profile.svg" alt="profile Icon" />
           </div>
@@ -111,14 +111,16 @@
             type="text"
             placeholder="Enter Username Here..."
             class="form-control"
-            (focus)="focusedInputField()"
+            (focus)="focusedInputField(username)"
+            (blur)="bluredInputField(username)"
+            id="username"
           />
         </div>
       </div>
 
       <div class="form-group mt-4">
         <label for="password">Password</label>
-        <div class="input-group flex item-center gap-3 mt-3">
+        <div class="input-group flex item-center gap-3 mt-3" #password>
           <div>
             <img
               src="../../../assets/images/Password.svg"
@@ -126,15 +128,18 @@
             />
           </div>
           <input
+            id="password"
             type="password"
             placeholder="Enter Password Here..."
             class="form-control"
+            (focus)="focusedInputField(password)"
+            (blur)="bluredInputField(password)"
           />
         </div>
       </div>
 
       <div class="form-group mt-4">
-        <input type="checkbox" />
+        <input type="checkbox" id="rememberme" />
         <label for="rememberme" class="ps-2">Remember Me</label>
       </div>
 

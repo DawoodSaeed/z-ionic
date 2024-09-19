@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class LoginPage {
   constructor() {}
 
-  focusedInputField() {
-    console.log('Input FIeld');
-    console.log(this);
+  focusedInputField(element: HTMLElement) {
+    element.classList.add('active');
+  }
+
+  bluredInputField(element: HTMLElement) {
+    element.classList.remove('active');
   }
 }
