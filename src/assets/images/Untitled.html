@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zulon AI Animation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #161b57;
+      }
+      svg {
+        width: 80vw;
+        height: auto;
+      }
+      .magnifying-glass {
+        animation: hover 2s infinite alternate;
+      }
+      @keyframes hover {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(5px, -5px);
+        }
+        100% {
+          transform: translate(0, -10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      width="300"
+      height="80"
+      viewBox="0 0 300 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#B700A6"></stop>
+          <stop offset="50%" stop-color="#FB4D5F"></stop>
+          <stop offset="100%" stop-color="#FAC17A"></stop>
+        </linearGradient>
+      </defs>
+      <g>
+        <text
+          x="10"
+          y="50"
+          font-family="'Poppins', sans-serif"
+          font-size="36"
+          fill="url(#gradient)"
+        >
+          Zulon
+        </text>
+        <text
+          x="120"
+          y="30"
+          font-family="'Poppins', sans-serif"
+          font-size="20"
+          fill="white"
+          dominant-baseline="middle"
+          text-anchor="middle"
+        >
+          A
+        </text>
+        <text
+          x="130"
+          y="30"
+          font-family="'Poppins', sans-serif"
+          font-size="20"
+          fill="white"
+          dominant-baseline="middle"
+          text-anchor="middle"
+        >
+          I
+        </text>
+        <circle
+          class="magnifying-glass"
+          cx="130"
+          cy="30"
+          r="10"
+          fill="none"
+          stroke="#005CFF"
+          stroke-width="3"
+        ></circle>
+        <line
+          class="magnifying-glass"
+          x1="130"
+          y1="30"
+          x2="140"
+          y2="50"
+          stroke="#005CFF"
+          stroke-width="3"
+        ></line>
+      </g>
+    </svg>
+  </body>
+</html>

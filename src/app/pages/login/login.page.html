@@ -2,10 +2,97 @@
   <div class="container">
     <div class="container-info">
       <div class="container-info__img">
-        <ion-img
-          src="../../../assets/images/zulonLogo 1.svg"
-          alt="Zulon Ai Logo"
-        />
+        <svg
+          _ngcontent-ng-c377969184=""
+          width="300"
+          height="80"
+          viewBox="0 0 300 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs _ngcontent-ng-c377969184="">
+            <linearGradient
+              _ngcontent-ng-c377969184=""
+              id="gradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop
+                _ngcontent-ng-c377969184=""
+                offset="0%"
+                stop-color="#B700A6"
+              ></stop>
+              <stop
+                _ngcontent-ng-c377969184=""
+                offset="50%"
+                stop-color="#FB4D5F"
+              ></stop>
+              <stop
+                _ngcontent-ng-c377969184=""
+                offset="100%"
+                stop-color="#FAC17A"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <g _ngcontent-ng-c377969184="">
+            <text
+              _ngcontent-ng-c377969184=""
+              x="10"
+              y="50"
+              font-family="'Poppins', sans-serif"
+              font-size="50"
+              fill="url(#gradient)"
+            >
+              Zulon
+            </text>
+            <text
+              _ngcontent-ng-c377969184=""
+              x="140"
+              y="10"
+              font-family="'Poppins', sans-serif"
+              font-size="20"
+              fill="white"
+              dominant-baseline="middle"
+              text-anchor="middle"
+            >
+              A
+            </text>
+            <text
+              _ngcontent-ng-c377969184=""
+              x="150"
+              y="10"
+              font-family="'Poppins', sans-serif"
+              font-size="20"
+              fill="white"
+              dominant-baseline="middle"
+              text-anchor="middle"
+            >
+              I
+            </text>
+            <circle
+              _ngcontent-ng-c377969184=""
+              cx="150"
+              cy="20"
+              r="10"
+              fill="none"
+              stroke="#005CFF"
+              stroke-width="3"
+              class="magnifying-glass"
+            ></circle>
+            <line
+              _ngcontent-ng-c377969184=""
+              x1="150"
+              y1="20"
+              x2="140"
+              y2="50"
+              stroke="#005CFF"
+              stroke-width="3"
+              class="magnifying-glass"
+            ></line>
+          </g>
+        </svg>
       </div>
       <div class="container-info__text">
         <h3 class="welcome">Welcome !</h3>
@@ -16,39 +103,43 @@
     <div class="container-form">
       <div class="form-group">
         <label for="username">Username</label>
-        <div class="input-group">
+        <div class="input-group flex gap-3 item-center mt-2">
           <div>
             <img src="../../../assets/images/Profile.svg" alt="profile Icon" />
           </div>
-          <input type="text" placeholder="Enter Username Here..." />
+          <input
+            type="text"
+            placeholder="Enter Username Here..."
+            class="form-control"
+            (focus)="focusedInputField()"
+          />
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="form-group mt-4">
         <label for="password">Password</label>
-        <div class="input-group">
+        <div class="input-group flex item-center gap-3 mt-3">
           <div>
             <img
               src="../../../assets/images/Password.svg"
               alt="Password Icon"
             />
           </div>
-          <input type="password" placeholder="Enter Password Here..." />
+          <input
+            type="password"
+            placeholder="Enter Password Here..."
+            class="form-control"
+          />
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="form-group mt-4">
         <input type="checkbox" />
-        <label for="rememberme">Remember Me</label>
+        <label for="rememberme" class="ps-2">Remember Me</label>
       </div>
 
       <div class="submission">
-        <input type="submit" class="form-btn" value="Login" />
-        <button
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          Button
-        </button>
+        <input type="submit" class="btn-form" value="Login" />
       </div>
     </div>
   </div>
